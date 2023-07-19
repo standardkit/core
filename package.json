@@ -1,0 +1,33 @@
+{
+  "name": "@standardkit/core",
+  "version": "0.0.1",
+  "description": "StandardKit Core",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/standardkit/core.git"
+  },
+  "keywords": [
+    "standardkit",
+    "typescript",
+    "interfaces",
+    "library",
+    "core",
+    "utility"
+  ],
+  "author": "Coen Mooij",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/standardkit/core/issues"
+  },
+  "homepage": "https://github.com/standardkit/core#readme",
+  "dependencies": {
+    "typescript": ">4.9.3"
+  }
+}
