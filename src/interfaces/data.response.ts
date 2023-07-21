@@ -14,7 +14,7 @@ export interface DataResponse<T> {
   sortable: Extract<keyof T, string>[];
 
   // Response state
-  pagination?: PaginationStateInterface;
+  pagination: PaginationStateInterface;
   sort?: SortInterface<T>;
   filters?: FilterInterface<T>[];
   search?: SearchInterface<T>;
