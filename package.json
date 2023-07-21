@@ -1,6 +1,6 @@
 {
   "name": "@standardkit/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "StandardKit Core",
   "main": "dist/index.js",
@@ -30,5 +30,9 @@
   "homepage": "https://github.com/standardkit/core#readme",
   "dependencies": {
     "typescript": ">4.9.3"
+
+  },
+  "peerDependencies": {
+    "rxjs": "^6.5.3 || ^7.4.0"
   }
 }
