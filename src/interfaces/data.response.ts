@@ -1,4 +1,4 @@
-import { SearchType } from '../types';
+import { SearchableKeyType, SortableType } from '../types';
 import { FilterableInterface } from './filterable.interface';
 import { FilterInterface } from './filter.interface';
 import { PaginationStateInterface } from './pagination-state.interface';
@@ -10,8 +10,8 @@ export interface DataResponse<T> {
 
   // Request options
   filterable: FilterableInterface<T>[];
-  searchable: (Extract<keyof T, string> | SearchType)[];
-  sortable: Extract<keyof T, string>[];
+  searchable: SearchableKeyType<T>[];
+  sortable: SortableType<T>[];
 
   // Response state
   pagination: PaginationStateInterface;

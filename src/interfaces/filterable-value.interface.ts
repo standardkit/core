@@ -1,4 +1,4 @@
 export interface FilterableValueInterface {
-  value: number | string;
+  value: number | string | null;
   label: string;
 }

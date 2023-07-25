@@ -1,6 +1,6 @@
-import { SearchType } from '../types';
+import { SearchableKeyType } from '../types';
 
 export interface SearchInterface<T> {
-  key: Extract<keyof T, string> | SearchType;
+  key: SearchableKeyType<T>;
   query: string;
 }
