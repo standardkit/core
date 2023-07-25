@@ -7,6 +7,9 @@
   "scripts": {
     "build": "tsc",
     "lint-staged": "lint-staged",
+    "release:patch": "npm version patch && npm run build && npm publish",
+    "release:minor": "npm version minor && npm run build && npm publish",
+    "release:major": "npm version major && npm run build && npm publish",
     "prepare": "husky install"
   },
   "files": ["dist/**/*"],
