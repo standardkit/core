@@ -5,23 +5,16 @@
   "description": "StandardKit Core",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
-  "files": [
-    "dist/**/*"
-  ],
+  "files": ["dist/**/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/standardkit/core.git"
   },
-  "keywords": [
-    "standardkit",
-    "typescript",
-    "interfaces",
-    "library",
-    "core",
-    "utility"
-  ],
+  "keywords": ["standardkit", "typescript", "interfaces", "library", "core", "utility"],
   "author": "Coen Mooij",
   "license": "UNLICENSED",
   "bugs": {
@@ -30,9 +23,23 @@
   "homepage": "https://github.com/standardkit/core#readme",
   "dependencies": {
     "typescript": ">4.9.3"
-
   },
   "peerDependencies": {
     "rxjs": "^6.5.3 || ^7.4.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-rxjs": "^5.0.3",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "prettier": "^3.0.0"
   }
 }

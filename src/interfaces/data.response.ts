@@ -1,6 +1,6 @@
 import { SearchableKeyType, SortableType } from '../types';
-import { FilterableInterface } from './filterable.interface';
 import { FilterInterface } from './filter.interface';
+import { FilterableInterface } from './filterable.interface';
 import { PaginationStateInterface } from './pagination-state.interface';
 import { SearchInterface } from './search.interface';
 import { SortInterface } from './sort.interface';

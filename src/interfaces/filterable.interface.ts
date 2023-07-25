@@ -1,7 +1,7 @@
 import { FilterableKeyType, FilterType } from '../types';
-import { FilterableValueInterface } from './filterable-value.interface';
 import { DataRequest } from './data.request';
 import { DataResponse } from './data.response';
+import { FilterableValueInterface } from './filterable-value.interface';
 
 export interface FilterableInterface<T> {
   key: FilterableKeyType<T>;
