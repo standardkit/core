@@ -6,7 +6,10 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "lint-staged": "lint-staged",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
+    "lint:prettier": "prettier '**/*.{js,md,yml,yaml,json}' --allow-empty-input --write",
+    "lint:eslint": "eslint --fix",
+    "lint:staged": "lint-staged",
     "release:patch": "npm version patch && npm run build && npm publish",
     "release:minor": "npm version minor && npm run build && npm publish",
     "release:major": "npm version major && npm run build && npm publish",
