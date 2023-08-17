@@ -1,7 +1,5 @@
 # Standardkit Core
 
-
-
 ## Installation
 
 ```bash
