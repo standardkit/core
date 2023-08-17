@@ -1,3 +1,4 @@
+export * from './enum.type';
 export * from './filter.type';
 export * from './filter-value.type';
 export * from './filterable-key.type';
