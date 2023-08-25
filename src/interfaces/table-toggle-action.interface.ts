@@ -5,6 +5,6 @@ export interface TableToggleActionInterface<T> {
   activateLabel: string;
   inactivateLabel: string;
   isActive: (row: T) => boolean;
-  toggleActive: (row: T) => Observable<void>;
-  toggleInactive: (row: T) => Observable<void>;
+  toggleActive: (row: T) => Observable<any>; // We allow any to avoid extra unnecessary mappings by consumer
+  toggleInactive: (row: T) => Observable<any>; // We allow any to avoid extra unnecessary mappings by consumer
 }

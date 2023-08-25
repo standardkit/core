@@ -3,6 +3,7 @@ export * from './enum.type';
 export * from './filter.type';
 export * from './filter-value.type';
 export * from './filterable-key.type';
+export * from './icon-set.type';
 export * from './search.type';
 export * from './searchable-key.type';
 export * from './sort-direction.type';
