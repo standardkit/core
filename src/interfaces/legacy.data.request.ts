@@ -3,7 +3,8 @@ import { PaginationInterface } from './pagination.interface';
 import { SearchInterface } from './search.interface';
 import { SortInterface } from './sort.interface';
 
-export interface DataRequest<T> {
+/** @deprecated Remove in favor of new style DataRequest */
+export interface LegacyDataRequest<T> {
   pagination: PaginationInterface;
   filters?: FilterInterface<T>[];
   search?: SearchInterface<T>;

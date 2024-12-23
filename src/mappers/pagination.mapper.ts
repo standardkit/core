@@ -12,8 +12,8 @@ export function mapPagination(
       totalNumberOfRows < pagination.limit
         ? 1
         : totalNumberOfRows % pagination.limit === 0
-        ? totalNumberOfRows / pagination.limit
-        : Math.floor(totalNumberOfRows / pagination.limit) + 1;
+          ? totalNumberOfRows / pagination.limit
+          : Math.floor(totalNumberOfRows / pagination.limit) + 1;
   }
 
   return {

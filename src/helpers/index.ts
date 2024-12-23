@@ -1,1 +1,1 @@
-export * from './sort.helpers';
+export * from './entries';
