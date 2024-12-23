@@ -4,6 +4,8 @@
     "module": "es2022",
     "declaration": true,
     "declarationMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
     "moduleResolution": "node",
     "outDir": "./dist",
     "strict": true

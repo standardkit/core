@@ -2,27 +2,31 @@
   "name": "@standardkit/core",
   "version": "0.1.4",
   "private": false,
-  "description": "StandardKit Core",
+  "description": "StandardKit - Core",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "lint:prettier": "prettier '**/*.{js,md,yml,yaml,json}' --write",
     "lint:eslint": "eslint --fix",
     "lint:staged": "lint-staged",
-    "release:patch": "npm version patch && npm run build && npm publish",
-    "release:minor": "npm version minor && npm run build && npm publish",
-    "release:major": "npm version major && npm run build && npm publish",
-    "prepare": "husky install"
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm run build",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "prepare": "husky"
   },
-  "files": ["dist/**/*"],
+  "files": ["dist", "README.md", "LICENSE"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/standardkit/core.git"
   },
   "keywords": ["standardkit", "typescript", "interfaces", "library", "core", "utility"],
   "author": "Coen Mooij",
-  "license": "UNLICENSED",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/standardkit/core/issues"
   },
@@ -37,6 +41,7 @@
     "@smarttools/eslint-plugin-rxjs": "^1.0.8",
     "@typescript-eslint/eslint-plugin": "^8.18.0",
     "@typescript-eslint/parser": "^8.18.0",
+    "auto-changelog": "^2.5.0",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.7.0",
