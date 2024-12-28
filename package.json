@@ -3,6 +3,8 @@
   "version": "0.2.3",
   "private": false,
   "description": "StandardKit - Core",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "npm run lint:prettier && npm run lint:eslint",
