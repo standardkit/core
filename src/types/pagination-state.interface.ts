@@ -1,8 +1,8 @@
 export interface PaginationState {
   limit: number;
   offset: number;
-  numberOfRows: number;
-  totalNumberOfRows: number;
+  currentItems: number;
+  totalItems: number;
   currentPage: number;
-  totalNumberOfPages: number;
+  totalPages: number;
 }
