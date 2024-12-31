@@ -11,7 +11,7 @@
     "lint:prettier": "prettier '**/*.{js,md,yml,yaml,json}' --write",
     "lint:eslint": "eslint --fix",
     "lint:staged": "lint-staged",
-    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "version": "auto-changelog -p -l 99 -b 99 && git add CHANGELOG.md",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm run build",
     "release:patch": "npm version patch && npm publish",
